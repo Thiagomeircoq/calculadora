@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculadora">
+                <div class="tela">
+                    <div class="sub-valor">
+                        <h2 class="sub-number"></h2>
+                        <h2 class="operador"></h2>
+                    </div>
+                    <h1 class="tela-number">0</h1>
+                </div>
+                <div class="teclado">
+                    <table>
+                        <tr>
+                            <td><button onclick="voltar()"><</button></td>
+                            <td><button onclick="limpaTotal()">CE</button></td>
+                            <td><button onclick="limpaTela()">C</button></td>
+                            <td><button onclick="dividir()">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>7</button></td>
+                            <td><button>8</button></td>
+                            <td><button>9</button></td>
+                            <td><button onclick="multiplicar()">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>4</button></td>
+                            <td><button>5</button></td>
+                            <td><button>6</button></td>
+                            <td><button onclick="subtrair()">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>1</button></td>
+                            <td><button>2</button></td>
+                            <td><button>3</button></td>
+                            <td><button onclick="soma()">+</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button>0</button></td>
+                            <td><button onclick="ponto()">.</button></td>
+                            <td><button onclick="calcular()">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

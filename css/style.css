@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #969593;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 400px;
+    left: auto;
+    right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #202020;
+    color: #fff;
+}
+
+.calculadora .tela {
+    width: 100%;
+    padding: 40px 10px 40px 10px;
+    font-size: 20px;
+    text-align: end;
+}
+
+.calculadora .tela .sub-valor {
+    display: flex;
+    justify-content: end;
+}
+
+.calculadora .tela .sub-number {
+    display: flex;
+    height: 16px;
+    color: #8d8b8b;
+    font-size: 15px;
+}
+
+.calculadora .tela .operador {
+    display: flex;
+    height: 16px;
+    color: #8d8b8b;
+    font-size: 15px;
+}
+
+.teclado table td {
+    background-color: #3B3B3B;
+    border-radius: 3px;
+}
+
+.teclado table tr:last-child td:first-child button:first-child {
+    width: 100%;
+}
+
+.teclado table td button {
+    background-color: #3B3B3B;
+    width: 95px;
+    height: 80px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.teclado table td button:hover {
+    background-color: #292828;
+}
+
+.teclado table tr:nth-child(1) td:last-child button:last-child {
+    background-color: #d6b3a0;
+}
+
+.teclado table tr:nth-child(1) td:last-child button:last-child:hover {
+    background-color: #cca18a;
+}
+
+.teclado table tr:nth-child(2) td:last-child button:last-child {
+    background-color: #EC8C8D;
+}
+
+.teclado table tr:nth-child(2) td:last-child button:last-child:hover {
+    background-color: #cc7779;
+}
+
+.teclado table tr:nth-child(3) td:last-child button:last-child {
+    background-color: #B480AE;
+}
+
+.teclado table tr:nth-child(3) td:last-child button:last-child:hover {
+    background-color: #a7689f;
+}
+
+.teclado table tr:nth-child(4) td:last-child button:last-child {
+    background-color: #EFAB88;
+}
+
+.teclado table tr:nth-child(4) td:last-child button:last-child:hover {
+    background-color: #b48369;
+}
+
+.teclado table tr:nth-child(5) td:last-child button:last-child {
+    background-color: #88ADB3;
+}
+
+.teclado table tr:nth-child(5) td:last-child button:last-child:hover {
+    background-color: #5BB2C5;
+}
+
+@media (max-width: 480px){
+    .teclado table td button {
+        width: 65px;
+        height: 50px;
+    }
+
+    .calculadora .tela {
+        padding: 20px 10px 20px 10px;
+    }
+
+}
