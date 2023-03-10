@@ -44,7 +44,7 @@ function subtrair(){
 
 function multiplicar(){
     resetarTela();
-    operador.innerHTML = "*";
+    operador.innerHTML = "x";
 }
 
 console.log(operador)
@@ -93,7 +93,7 @@ function calcular() {
             case "-":
                 resultado = number2 - number1;
                 break;
-            case "*":
+            case "x":
                 resultado = number1 * number2;
                 break;
             case "/":
